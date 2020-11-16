@@ -2,64 +2,64 @@
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-6">
-        <div class="main-profile">
-          <div *ngIf="profile">
-            <div class="row">
-              <div class="col-sm-5"><br>
-                <img src="{{profile.avatar_url}}" class="Profile_picture" alt="img">
-              </div>
+        <div class="col-6">
+            <div class="main-profile">
+                <div *ngIf="profile">
+                    <div class="row">
+                        <div class="col-sm-5"><br>
+                            <img src="{{profile.avatar_url}}" class="Profile_picture" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Name: {{profile.name}}</h2> ({{profile.login}})
+                    <h2> <span *ngIf="profile.company">Company: {{profile.company}}</span></h2>
+                    <h2>Location: {{profile.location}} </h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li class="list-group-item list-group-item-success" *ngIf="profile.bio">Bio: {{profile.bio}}
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div>
-            <h2>Name: {{profile.name}}</h2> ({{profile.login}})
-            <h2> <span *ngIf="profile.company">Company: {{profile.company}}</span></h2>
-            <h2>Location: {{profile.location}} </h2>
-          </div>
-          <div class="list">
-            <ul>
-              <li class="list-group-item list-group-item-success" *ngIf="profile.bio">Bio: {{profile.bio}}</li>
-  
-            </ul>
-          </div>
         </div>
-      </div>
-      <div class="col-6 pt-4">
-        <div class="card" appHighlight>
-          <div class="card-body">
-            <h4>Github Username: {{profile.login}}</h4>
-            <hr>
-            <p><i class="fa fa-file" style="font-size:20px"></i>&nbsp;&nbsp; Repositories:&nbsp;&nbsp; <span
-                class="follow">{{profile.public_repos}}</span></p>
-            <hr>
-            <p> <i class="fa fa-user" style="font-size:20px"></i>&nbsp;&nbsp; Following:&nbsp;&nbsp; <span
-                class="follow">{{profile.following}}</span></p>
-            <hr>
-            <p> <i class="fa fa-users" style="font-size:20px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span
-                class="follow">{{profile.followers}}</span></p>
-            <hr>
-            <p> <i class="fa fa-calendar" style="font-size:20px"></i>&nbsp;&nbsp; Date Created:&nbsp;&nbsp; <span
-                class="follow">{{profile.created_at | date}}</span></p>
-            <hr>
-            <hr>
-          </div>
+        <div class="col-6 pt-4">
+            <div class="card" appHover>
+                <div class="card-body">
+                    <h4>Github Username: {{profile.login}}</h4>
+                    <hr>
+                    <p><i class="fa fa-file" style="font-size:20px"></i>&nbsp;&nbsp; Repositories:&nbsp;&nbsp; <span
+                            class="follow">{{profile.public_repos}}</span></p>
+                    <hr>
+                    <p> <i class="fa fa-user" style="font-size:20px"></i>&nbsp;&nbsp; Following:&nbsp;&nbsp; <span
+                            class="follow">{{profile.following}}</span></p>
+                    <hr>
+                    <p> <i class="fa fa-users" style="font-size:20px"></i>&nbsp;&nbsp; Followers:&nbsp;&nbsp; <span
+                            class="follow">{{profile.followers}}</span></p>
+                    <hr>
+                    <p> <i class="fa fa-calendar" style="font-size:20px"></i>&nbsp;&nbsp; Date Created:&nbsp;&nbsp;
+                        <span class="follow">{{profile.created_at | date}}</span></p>
+                    <hr>
+                    <hr>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <hr>
-  <div class="container-fluid">
+</div>
+<hr>
+<div class="container-fluid">
     <h1 class="text-center"><strong><em>Repositories</em></strong></h1>
     <div class="row">
-      <div class="col-sm-6 pt-3" *ngFor="let repo of repos">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Repository Name: {{repo.name}} </h5>
-            <p class="card-text">Description: {{repo.description}}</p>
-            <a href="{{repo.html_url}}" class="btn btn-primary">View Project</a>
-          </div>
+        <div class="col-sm-6 pt-3" *ngFor="let repo of repos">
+            <div class="card" appHover>
+                <div class="card-body">
+                    <h5 class="card-title">Repository Name: {{repo.name}} </h5>
+                    <p class="card-text">Description: {{repo.description}}</p>
+                    <a href="{{repo.html_url}}" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  
+</div>
