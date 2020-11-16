@@ -1,6 +1,27 @@
-# Github
+# GithubSearch
+### By Preston Too
+* "https://github.com/Preston-Too"
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+## Description
+GithubSearch is an application that uses an API to get github information of other people. Users enters a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
+
+## Behaviour Driven Development(BDD)
+1. A form is provided to input Github Username
+2. User click search
+3. On submition users profile details and repositories are displayed
+
+## Setup/Installation Requirements
+* Clone or download and unzip the repository from github, "https://github.com/Preston-Too/GithubSearch.git"
+* If you have git Use this command git clone * to clone the project.
+* Run ng serve from your terminal
+## Known Bugs
+No known bugs.
+
+## Technologies Used
+* Angular CLI.
+* Javascript and Typescripts.
+* CSS and bootstrap for styling of web page.
+* HTML for writing website content.
 
 ## Development server
 
@@ -22,6 +43,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Support and contact details
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+For enquiries and contribution to my project, kindly reach me through E-MAIL: "toopreston@gmail.com"
+## License
+* See below for more details on licensing.
+* MIT License "https://choosealicense.com/licenses/mit/"
+* Copyright (c) 2020 Preston Too

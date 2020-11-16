@@ -19,7 +19,7 @@ export class HoverDirective {
 
   @HostListener('mouseout')
   onMouseOut() {
-    this.setColor('#fff')
+    this.setColor('white')
   }
 
 }

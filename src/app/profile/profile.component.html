@@ -58,6 +58,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Repository Name: {{repo.name}} </h5>
                     <p class="card-text">Description: {{repo.description}}</p>
+                    <h5 class="card-text">Language: {{repo.language}} </h5>
+                    <p class="card-text">Date Created: {{repo.created_at|date}}</p>
                     <a href="{{repo.html_url}}" class="btn btn-primary">View Project</a>
                 </div>
             </div>
